@@ -1,9 +1,10 @@
 <head>
 	<title>Bank With Me</title>
+	<link rel="stylesheet" type="text/css" href="../tiger.css">
 </head>
 <body>
 	<h1>Banky McBank face</h1>
-	<form>
+	<form class="form_for_banking">
 		<ul>
 			<li>
 				<label>Applicant first name</label>
@@ -36,12 +37,14 @@
 			</li>
 		</ul>
 	</form>
-	<ol>
-		<li>Commercial</li>
-		<li>Real estate</li>
-		<li>Personal</li>
-		<li>Mortgage</li>
-	</ol>
+	<div>
+		<select>
+			<option>Commercial</option>
+			<option>Real estate</option>
+			<option>Personal</option>
+			<option>Mortgage</option>
+		</select>
+	</div>
 	<label>Amount of loan being reequsted</label>
 	<input type="text" name="loan_request">
 	<ul>
@@ -76,26 +79,22 @@
 			<input type="checkbox" name="">
 		</li>
 	</ul>
+	<label>Additional Comments</labeoption
 	<div>
-		<label>Additional Comments</label>
-		<input type="type" name="additional_comment">
+		<textarea></textarea>
 	</div>
 	<ol>
 		<li>
 			<label>Email address</label>
-			<input type="text" name="email_address">
+			<input type="email">
 		</li>
-		<li>	
-			<label>Applicant middle initial</label>
-			<input type="text" name="middle_initial">
+		<li>
+			<label>Phone number</label>
+			<input type="phone">
 		</li>	
 		<li>
-			<label>Applicant last name</label>
-			<input type="text" name="last_name">
-		</li>	
-		<li>
-			<label>Email address</label>
-			<input type="text" name="email_address">
+			<label>LinkedIn URL</label>
+			<input type="url">
 		</li>	
 	</ol>
 </body>
